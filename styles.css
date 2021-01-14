@@ -28,21 +28,31 @@ body {
 }
 
 .gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-gap: 1.125rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
-.gallery__item {
-    margin: 0;
+.gallery__item {  
+    max-width: 200px;
+    max-height: 300px;  
+    margin: 1rem;
 }
 
-.gallery__img {
+.gallery__content {
+    display: flex;
+}
+
+.img--designation {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+}
+
+.gallery__img {    
     width: 100%;
     height: 100%;
     object-fit: cover;
-    display: block;
 }
 
 .footer {
