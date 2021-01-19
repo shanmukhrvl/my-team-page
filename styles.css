@@ -63,12 +63,14 @@ body {
 }
 
 .gallery__item {
-  margin: auto;
-  max-width: 70%;
+  margin: 0;
+  justify-self: start;
+  max-width: 80%;
 }
 
 .gallery__item:nth-child(2n) {
-  margin-top: 4rem;
+  justify-self: end;
+  margin-top: 4em;
 }
 
 .gallery__member {
@@ -113,7 +115,7 @@ body {
   }
 
   .gallery__item {
-    margin: auto 0;
+    margin: 0;
   }
 
   .gallery__item:nth-child(2n) {
