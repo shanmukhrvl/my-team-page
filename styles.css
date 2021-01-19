@@ -112,11 +112,24 @@ body {
     grid-gap: 4rem;
   }
 
+  .gallery__item {
+    margin: auto 0;
+  }
+
   .gallery__item:nth-child(2n) {
     margin-top: 0;
   }
 
   .gallery__item:nth-child(3n-1) {
     margin-top: 5rem;
+    justify-self: center;
+  }
+
+  .gallery__item:nth-child(3n-2) {
+    justify-self: start;
+  }
+
+  .gallery__item:nth-child(3n) {
+    justify-self: end;
   }
 }
